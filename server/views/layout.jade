@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+  head
+  meta(charset='utf-8')
+  meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+  title Mochatron | Remote Test Runner
+  link(href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css', rel='stylesheet', type='text/css')
+  link(href='/css/style.css', rel='stylesheet', type='text/css')
+
+  // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+  //if lt IE 9
+    script(src='#{pathToAssets}/assets/js/html5shiv.js')
+    script(src='#{pathToAssets}/assets/js/respond.min.js')
+body
+  .container
+    .masthead
+      h3.text-muted Auth-o-matic | Arhaus OAuth Server
+      ul.nav.nav-justified
+        li.active
+          a(href='#') Home
+        li
+          a(href='#') Login
+        li
+          a(href='#') Services
+        li
+          a(href='#') Downloads
+        li
+          a(href='#') About
+
+  .container
+    block content
+
+  script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js')
+  block scripts

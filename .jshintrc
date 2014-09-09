@@ -1,0 +1,8 @@
+{
+  "node": true,
+  "browser": false,
+  "globals": {
+    "module": true,
+    "config": true
+  }
+}

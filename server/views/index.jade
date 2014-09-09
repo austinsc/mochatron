@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  .row.test-content
+    .col-md-4
+        .list-group(data-active-suites)
+          a.list-group-item.active Active Suites
+          a.list-group-item(data-placeholder) None
+        .list-group(data-recent-suites)
+          a.list-group-item.active Recent Suites
+          a.list-group-item(data-placeholder) None
+
+    .col-md-8(data-wrapper)
+
+block scripts
+  script(src='/socket.io/socket.io.js')
+  script(src='/boot.js')
